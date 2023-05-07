@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public Question[] questions;
+    public ScoreManager scoreManager;
     private static List<Question> unansweredQuestion;
 
     public Button correctButton;
@@ -20,6 +21,8 @@ public class GameManager : MonoBehaviour
     private TMP_Text questionText, textA, textB, textC, textD;
     [SerializeField]
     private Image questionPic;
+    [SerializeField]
+    private GameObject panel;
 
     /*  [SerializeField]
       private TMP_Text correctAnswerText, wrongAnswerText;*/
@@ -51,16 +54,18 @@ public class GameManager : MonoBehaviour
 
     void SetCurrentQuestion()
     {
+
         int randomQuestionIndex = Random.Range(0, unansweredQuestion.Count);
+        if (randomQuestionIndex >= unansweredQuestion.Count)
+        {
+            panel.SetActive(true);
+        }
         currentQuestion = unansweredQuestion[randomQuestionIndex];
 
         questionText.text = currentQuestion.question;
         questionPic.sprite = currentQuestion.image;
      
-        if (unansweredQuestion.Count == 0)
-        {
-          
-        }
+       
 
         /*textA.text = currentQuestion.answerA;
         textB.text = currentQuestion.answerB;
@@ -118,7 +123,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Correct!");
             animator.SetTrigger("True");
-            score = +10;
+            ScoreManager.instance.AddPoint();
         }
         else
         {
@@ -136,7 +141,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Correct!");
             animator.SetTrigger("False");
-            score = +10;
+            ScoreManager.instance.AddPoint();
         }
         else
         {

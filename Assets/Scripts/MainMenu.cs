@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
+
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene(0);
+    }
     public void MateriButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
