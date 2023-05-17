@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8701853053352555938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8701853053352555941}
+  - component: {fileID: 8701853053352555943}
+  - component: {fileID: 8701853053352555940}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8701853053352555941
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8701853053352555938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8701853053352555943
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8701853053352555938}
+  m_CullTransparentMesh: 1
+--- !u!114 &8701853053352555940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8701853053352555938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla,
+    velit nec venenatis pulvinar, diam diam molestie metus, ac ultricies sapien nulla
+    ut eros. Aliquam pharetra, erat quis bibendum lacinia, massa ex tempus arcu,
+    eget pretium nibh purus ut lorem. Donec sit amet felis ipsum. Suspendisse tempus
+    arcu eget leo interdum sagittis. Nunc efficitur maximus massa, ac consectetur
+    nibh tempus a. Nullam interdum sollicitudin orci, vitae suscipit dolor. Sed eget
+    quam vitae nulla auctor feugiat ut a orci. Vestibulum ac tortor nisi. Fusce ligula
+    eros, aliquet id nisi eget, finibus congue turpis. Sed id vulputate magna, at
+    pharetra nulla. Donec congue gravida aliquam.
+
+
+
+    Integer egestas, ligula
+    sit amet sodales gravida, ipsum lectus fermentum sem, ac finibus ligula sem in
+    velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+    ridiculus mus. In nec luctus elit, eu molestie libero. Nunc cursus feugiat dignissim.
+    Donec leo nulla, hendrerit eu orci a, sollicitudin mattis nulla. Maecenas fermentum,
+    nisi iaculis ullamcorper bibendum, quam leo elementum turpis, sit amet pretium
+    diam elit sed eros. Proin volutpat volutpat convallis.
+
+
+
+    Ut nec mauris id
+    dui blandit sollicitudin. Pellentesque ligula dui, volutpat non vehicula nec,
+    pharetra et augue. Mauris eleifend porta ipsum. Vestibulum laoreet sollicitudin
+    augue, vitae tincidunt dui iaculis a. Donec tristique hendrerit sagittis. Fusce
+    mi turpis, vestibulum ut aliquet vitae, malesuada eu risus. Curabitur suscipit
+    tortor a lectus dapibus, ut dapibus nisi finibus. Maecenas pharetra nulla magna,
+    non pellentesque nunc lobortis sit amet. Praesent eget pellentesque urna, nec
+    laoreet tortor.
+
+
+
+    Phasellus non posuere ante, vitae congue dolor. Vivamus
+    feugiat facilisis viverra. Nullam pharetra molestie odio vitae cursus. Nullam
+    sed neque at mauris efficitur dictum. Orci varius natoque penatibus et magnis
+    dis parturient montes, nascetur ridiculus mus. Pellentesque euismod leo quis
+    nunc elementum, non malesuada nibh varius. Proin vel maximus mi. In porta mauris
+    elit, ut sollicitudin sapien aliquam id. Ut a venenatis orci. Ut sit amet dignissim
+    tellus, sed maximus turpis. Aenean ornare consectetur ligula in ullamcorper.
+    Pellentesque commodo tellus sagittis felis sodales, euismod tincidunt arcu tincidunt.
+    Suspendisse non ligula et sem auctor lobortis. Aliquam efficitur dui elit, quis
+    commodo purus vulputate at. Nulla convallis pharetra erat, a accumsan felis accumsan
+    nec. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+
+
+    Mauris
+    ut risus at dolor porta consectetur non eget orci. Etiam et velit et mauris semper
+    congue. Aliquam at est ut libero fringilla sagittis. Donec eleifend interdum
+    lectus, a finibus sapien semper eget. Phasellus mattis suscipit imperdiet. Quisque
+    finibus tincidunt nisl non convallis. Nunc at ligula aliquet, imperdiet arcu
+    eget, ullamcorper lectus.'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
