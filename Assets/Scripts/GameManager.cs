@@ -12,21 +12,19 @@ public class GameManager : MonoBehaviour
     public ScoreManager scoreManager;
     private static List<Question> unansweredQuestion;
 
+    public AudioManager audioManager;
+
     public Button correctButton;
     public Button wrongButton;
 
     private Question currentQuestion;
-    //private Question.AnswerList userAnswer;
+ 
     [SerializeField]
     private TMP_Text questionText, textA, textB, textC, textD;
     [SerializeField]
     private Image questionPic;
     [SerializeField]
     private GameObject panel;
-
-    /*  [SerializeField]
-      private TMP_Text correctAnswerText, wrongAnswerText;*/
-
 
     [SerializeField]
     private float timeBetweenQuestion = 1.5f;
@@ -40,9 +38,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-       /* Button corrButton = correctButton.GetComponent<Button>();
-        Button wroButton = wrongButton.GetComponent<Button>();*/
-
+     
+        
         if (unansweredQuestion == null || unansweredQuestion.Count == 0)
         {
             unansweredQuestion = questions.ToList<Question>();
@@ -58,19 +55,15 @@ public class GameManager : MonoBehaviour
         int randomQuestionIndex = Random.Range(0, unansweredQuestion.Count);
         if (randomQuestionIndex >= unansweredQuestion.Count)
         {
+            FindObjectOfType<AudioManager>().Play("GameOverSound");
             panel.SetActive(true);
+            return;
         }
         currentQuestion = unansweredQuestion[randomQuestionIndex];
 
         questionText.text = currentQuestion.question;
         questionPic.sprite = currentQuestion.image;
-     
-       
-
-        /*textA.text = currentQuestion.answerA;
-        textB.text = currentQuestion.answerB;
-        textC.text = currentQuestion.answerC;
-        textD.text = currentQuestion.answerD;*/
+    
     }
 
     IEnumerator TransitionToNextQuestion()
@@ -92,41 +85,21 @@ public class GameManager : MonoBehaviour
         wrongButton.enabled = true;
     }
 
-    //use enum for mutliple choice
-    /*  public void UserAnswer()
-      {
-         if(userAnswer == Question.AnswerList.A)
-          {
-
-          }
-          if (userAnswer == Question.AnswerList.B)
-          {
-
-          }
-          if (userAnswer == Question.AnswerList.C)
-          {
-
-          }
-          if (userAnswer == Question.AnswerList.D)
-          {
-
-          }
-      }
-  */
-
-
+ 
     public void UserSelectCorrectAnswer()
     {
         correctButton.enabled = false;
         wrongButton.enabled = false;
         if (currentQuestion.isCorrect)
         {
+            FindObjectOfType<AudioManager>().Play("CorrectSound");
             Debug.Log("Correct!");
             animator.SetTrigger("True");
             ScoreManager.instance.AddPoint();
         }
         else
         {
+            FindObjectOfType<AudioManager>().Play("WrongSound");
             Debug.Log("Wrong!");
             animator.SetTrigger("False");
         }
@@ -139,12 +112,14 @@ public class GameManager : MonoBehaviour
         wrongButton.enabled = false;
         if (!currentQuestion.isCorrect)
         {
+            FindObjectOfType<AudioManager>().Play("CorrectSound");
             Debug.Log("Correct!");
             animator.SetTrigger("False");
             ScoreManager.instance.AddPoint();
         }
         else
         {
+            FindObjectOfType<AudioManager>().Play("WrongSound");
             Debug.Log("Wrong!");
             animator.SetTrigger("True");
         }

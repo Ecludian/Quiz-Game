@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Drag & Drop.unity
     guid: 65de695892b152e40b3859394795401b
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 05e089cfc1de3f0419f94b6024e2f5bc, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 7a195f28905a8434bb3834f2f22958af, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 0b7bd6a36eea0d3498e9ae995a2e79fa, type: 2}

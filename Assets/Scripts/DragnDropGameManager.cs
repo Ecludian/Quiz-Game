@@ -109,7 +109,7 @@ public class DragnDropGameManager : MonoBehaviour, IDropHandler
                 feedbackPanel.SetActive(true);
                 correctPopUpObject.SetActive(true);
                 Debug.Log("Correct");
-                ScoreManager.instance.AddPoint();
+                ScoreManagerDnD.instance.AddPoint();
                 //itemSlotText.text = currentQuestion.answer1.answer1;
                 StartCoroutine(ResetItemPos());
                 eventData.pointerDrag.GetComponent<RectTransform>().localPosition = dragDrop.startPosition;
@@ -122,7 +122,7 @@ public class DragnDropGameManager : MonoBehaviour, IDropHandler
                 feedbackPanel.SetActive(true);
                 correctPopUpObject.SetActive(true);
                 Debug.Log("Correct");
-                ScoreManager.instance.AddPoint();
+                ScoreManagerDnD.instance.AddPoint();
                 //itemSlotText.text = currentQuestion.answer2.answer2;
                 StartCoroutine(ResetItemPos());
                 eventData.pointerDrag.GetComponent<RectTransform>().localPosition = dragDrop.startPosition;
@@ -135,7 +135,7 @@ public class DragnDropGameManager : MonoBehaviour, IDropHandler
                 feedbackPanel.SetActive(true);
                 correctPopUpObject.SetActive(true);
                 Debug.Log("Correct");
-                ScoreManager.instance.AddPoint();
+                ScoreManagerDnD.instance.AddPoint();
                 //itemSlotText.text = currentQuestion.answer3.answer3;
                 StartCoroutine(ResetItemPos());
                 eventData.pointerDrag.GetComponent<RectTransform>().localPosition = dragDrop.startPosition;
@@ -147,7 +147,7 @@ public class DragnDropGameManager : MonoBehaviour, IDropHandler
                 feedbackPanel.SetActive(true);
                 correctPopUpObject.SetActive(true);
                 Debug.Log("Correct");
-                ScoreManager.instance.AddPoint();
+                ScoreManagerDnD.instance.AddPoint();
                 //itemSlotText.text = currentQuestion.answer4.answer4;
                 StartCoroutine(ResetItemPos());
                 eventData.pointerDrag.GetComponent<RectTransform>().localPosition = dragDrop.startPosition;

@@ -18,12 +18,12 @@ public class ScoreManager : MonoBehaviour
     }
     private void Start()
     {
-        scoreText.text = score.ToString() + " POINTS ";
+        scoreText.text = "Nilai Kamu : " + score.ToString() + " POIN ";
     }
 
     public void AddPoint()
     {
-        score += 10;
-        scoreText.text = score.ToString() + " POINTS! ";
+        score += 20;
+        scoreText.text = "Nilai Kamu : " + score.ToString() + " POIN! ";
     }
 }
