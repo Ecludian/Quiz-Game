@@ -38,8 +38,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-     
-        
+
         if (unansweredQuestion == null || unansweredQuestion.Count == 0)
         {
             unansweredQuestion = questions.ToList<Question>();

@@ -10,7 +10,6 @@ public class ScoreManager : MonoBehaviour
     private int score;
     [SerializeField]
     private TMP_Text scoreText;
-    // Start is called before the first frame update
 
     private void Awake()
     {

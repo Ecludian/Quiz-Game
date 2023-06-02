@@ -13,7 +13,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private void Awake()
     {
         startPosition = transform.localPosition;
-        //startPosition.position = transform.position;
         instance = this;
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();

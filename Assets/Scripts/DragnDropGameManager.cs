@@ -18,7 +18,7 @@ public class DragnDropGameManager : MonoBehaviour, IDropHandler
     public GameObject correctAnswer;
 
     private DragnDropQuestion currentQuestion;
-    //private Question.AnswerList userAnswer;
+
     [SerializeField]
     private TMP_Text questionText, answer1Text, answer2Text, answer3Text, answer4Text, itemSlotText;
     [SerializeField]

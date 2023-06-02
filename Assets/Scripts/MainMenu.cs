@@ -7,7 +7,10 @@ public class MainMenu : MonoBehaviour
     public Animator tansition;
 
     public float transitionTime = 1f;
-    
+    private void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
     public void MainMenuButton()
     {
         FindObjectOfType<AudioManager>().Play("ButtonClick");

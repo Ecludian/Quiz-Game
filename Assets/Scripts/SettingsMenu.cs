@@ -44,7 +44,5 @@ public class SettingsMenu : MonoBehaviour
             mute.gameObject.SetActive(false);
         }
         
-       
-        
     }
 }
